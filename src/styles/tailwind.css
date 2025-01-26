@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      /* ------Color variables------ */
+      --black_900: #000000;
+      --black_900_33: #00000033;
+      --gray_600: #6b6b6b19;
+      --gray_900: #161b12;
+      --indigo_900: #2b2b67;
+      --linear_1: #62bdae;
+      --primary_colors_white_1: #ffffff;
+      --teal_300: #3ba2c3;
+      --teal_300_01: #4babad;
+      --white_a700_ff: #ffffff7f;
+      --white_a700_99: #ffffff99;
+  
+      /* ------Border radius variables------ */
+      --radius-xs: 12px;
+      --radius-sm: 20px;
+      --radius-md: 40px;
+  
+      /* ------Spacing variables------ */
+      --space-xs: 8px;
+      --space-sm: 12px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 32px;
+      --space-2xl: 72px;
+    }
+  
+    [type="text"],
+    input:where(:not([type])),
+    [type="email"],
+    [type="url"],
+    [type="password"],
+    [type="number"],
+    [type="date"],
+    [type="datetime-local"],
+    [type="month"],
+    [type="search"],
+    [type="tel"],
+    [type="time"],
+    [type="week"],
+    [multiple],
+    textarea,
+    select {
+      appearance: none;
+      background-color: transparent;
+      border-color: unset;
+      border-width: 0;
+      border-radius: unset;
+      padding: unset;
+      font-size: unset;
+      line-height: unset;
+    }
+    
+    /* Override default focus colors for tailwindcss-forms https://github.com/tailwindlabs/tailwindcss-forms */
+    [type="text"]:focus,
+    [type="email"]:focus,
+    [type="url"]:focus,
+    [type="password"]:focus,
+    [type="number"]:focus,
+    [type="date"]:focus,
+    [type="search"]:focus,
+    [multiple]:focus,
+    textarea:focus {
+      --tw-ring-color: transparent;
+      border-color: transparent;
+    }
+    
+    [type="radio"]:focus,
+    [type="checkbox"]:focus {
+      --tw-ring-color: transparent;
+    }
+}
+@layer components {
+    /* -------------------------------------
+       Container CSS
+    ------------------------------------- */
+    .container-xs {
+      @apply w-full mx-auto max-w-[1010px];
+    }
+  }
+  
+    
+
+      
+ 
