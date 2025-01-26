@@ -1,6 +1,6 @@
-import { Heading } from "../../Components/Heading/index.jsx";
-import EducationDetails from "../../Components/EducationDetails.jsx";
-import UserProfileDetails from "../../Components/UserProfileDetails.jsx";
+import { Heading } from "../../components/Heading";
+import EducationDetails from "../../components/EducationDetails";
+import UserProfileDetails from "../../components/UserProfileDetails";
 import React, { Suspense } from "react";
 
 const workExperienceList = [
