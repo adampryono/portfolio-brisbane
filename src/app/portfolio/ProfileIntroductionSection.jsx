@@ -69,8 +69,8 @@ export default function ProfileIntroductionSection() {
                 shape="round"
                 className="w-[64px] rounded-[12px] px-3"
               >
-                <img
-                  src="images/basil_document-solid.png"
+                <Img
+                  src="basil_document-solid.png"
                   width={40}
                   height={40}
                 />
@@ -79,14 +79,14 @@ export default function ProfileIntroductionSection() {
                 shape="round"
                 className="w-[64px] rounded-[12px] px-3"
               >
-                <img src="images/tabler_mail-filled.png" width={40} height={40} />
+                <Img src="tabler_mail-filled.png" width={40} height={40} />
               </Button>
               <Button
                 shape="round"
                 className="w-[64px] rounded-[12px] px-3"
               >
-                <img
-                  src="images/lineicons_linkedin.png"
+                <Img
+                  src="lineicons_linkedin.png"
                   width={40}
                   height={40}
                 />
@@ -95,7 +95,7 @@ export default function ProfileIntroductionSection() {
                 shape="round"
                 className="w-[64px] rounded-[12px] px-3"
               >
-                <img src="images/mdi_github.svg" width={40} height={40} />
+                <Img src="mdi_github.svg" width={40} height={40} />
               </Button>
             </motion.div>
           </div>

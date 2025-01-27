@@ -45,7 +45,7 @@ export default function ProjectsSection() {
                 Used this to analyze individual players' decision making skills.
               </>
             }
-            className="bg-gray-900_02"
+            className="bg-gray-900"
           />
         </div>
       </div>
