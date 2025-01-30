@@ -17,7 +17,7 @@ export default function Footer({ ...props }) {
                     className="h-[80px] w-[152px] object-contain"
                 />
                 <div className="flex w-[60%] items-start justify-between gap-5 md:w-full sm:flex-col sm:items-center">
-                    <div className="flex w-[42%] flex-col items-start justify-center gap-2 self-center sm:items-center">
+                    <div className="flex w-[42%] flex-col items-start justify-center gap-2 self-center sm:w-full sm:items-center">
                         <Heading
                             size="headings"
                             as="h4"
@@ -25,7 +25,7 @@ export default function Footer({ ...props }) {
                         >
                             CONTACT ME
                         </Heading>
-                        <div className="flex flex-col items-start justify-center gap-2 self-stretch sm:items-center">
+                        <div className="flex flex-col items-start justify-center gap-2 self-stretch sm:items-center sm:text-center">
                             <Heading
                                 as="h5"
                                 className="!font-inter text-[20px] font-semibold sm:text-center"
@@ -35,7 +35,7 @@ export default function Footer({ ...props }) {
                             >
                                 akowkcakwo@gmail.com
                             </Heading>
-                            <div className="flex sm:justify-center">
+                            <div className="flex flex-wrap sm:justify-center">
                                 <Heading
                                     size="textxs"
                                     as="p"
@@ -47,7 +47,7 @@ export default function Footer({ ...props }) {
                                     +62 8888888888
                                 </Heading>
                             </div>
-                            <div className="flex sm:justify-center">
+                            <div className="flex flex-wrap sm:justify-center">
                                 <Heading
                                     as="h5"
                                     className="self-end !font-inter text-[20px] font-semibold sm:text-center"
