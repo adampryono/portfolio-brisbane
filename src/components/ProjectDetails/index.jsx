@@ -1,12 +1,14 @@
-"use client";
 import { Button, Img, ChipView, Heading } from "./..";
 import React from "react";
 
 export default function ProjectDetails({
   mainHeading = "Player Passing and Decision Making Analysis",
   subHeading = "An analysis on decision making using the xG (expected)",
-  descriptionText = `\tUsing event data, created different pass types and found the xG for each pass type.\nUsed this to analyze individual players' decision making skills.`,
-  ...props
+  descriptionPoints = [
+    "Using event data, created different pass types and found the xG for each pass type.",
+    "Used this to analyze individual players' decision making skills."
+  ],
+  ...props // This will gather all remaining props
 }) {
   const [chipOptions2, setChipOptions2] = React.useState(() => [
     { value: 1, label: "Python" },
@@ -17,48 +19,47 @@ export default function ProjectDetails({
   const [selectedChipOptions2, setSelectedChipOptions2] = React.useState([]);
 
   return (
-    <div
-      {...props}
-      className={`{props.className} flex md:flex-col sm:flex-col items-center self-stretch gap-6 p-7 sm:p-4 flex-1 rounded-[20px] bg-[#1B1F24]`}
-    >
+    <div className={`flex md:flex-col sm:flex-col items-center self-stretch gap-6 p-7 sm:p-4 flex-1 rounded-[20px] bg-[#1B1F24]`}>
       <div className="w-[30%] rounded-[12px] bg-[#1B1F24] md:w-full sm:w-full">
         <Img
           src="img_image_16_314x274.png"
           width={274}
           height={314}
-          alt=""
+          alt="project image"
           className="h-[314px] w-full rounded-[12px] object-cover md:h-auto sm:h-auto"
         />
       </div>
       <div className="flex flex-1 flex-col gap-10 md:self-stretch sm:self-stretch sm:gap-6 md:items-center sm:items-center">
-        <div className="flex flex-col items-start gap-2 sm:gap-1 md:items-center sm:items-center">
+        <div className="flex flex-col items-start gap-4 sm:gap-2 md:items-center sm:items-center">
           <Heading
             size="headingmd"
             as="h2"
-            className="w-full text-[32px] font-bold leading-[40px] sm:text-[24px] sm:leading-[30px] md:text-center sm:text-center"
+            className="w-full text-[32px] font-bold leading-[40px] sm:text-[24px] sm:leading-[30px] md:text-center sm:text-center sm:mt-2"
           >
             {mainHeading}
           </Heading>
           <Heading
             as="h5"
-            className="text-[20px] font-semibold text-white-a700_99 sm:text-[16px] md:text-center sm:text-center"
+            className="text-[20px] font-semibold text-white-a700_99 sm:text-[16px] md:text-center sm:text-center sm:mt-2"
           >
             {subHeading}
           </Heading>
-          <Heading
-            as="h5"
-            className="w-full text-[20px] font-semibold leading-[140%] text-white-a700_99 sm:text-[15px] md:text-center sm:text-center"
-          >
-            {descriptionText}
-          </Heading>
+          <div className="w-full text-[20px] font-semibold leading-[140%] text-white-a700_99 sm:text-[15px] md:text-center sm:text-left sm:mt-2">
+            <ul className="list-disc pl-5">
+              {descriptionPoints.map((point, index) => (
+                <li key={index}>{point}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="flex items-center justify-center flex-wrap gap-4">
+
+        <div className="flex justify-between w-full items-center sm:flex-col sm:gap-4">
           <ChipView
             options={chipOptions2}
             setOptions={setChipOptions2}
             values={selectedChipOptions2}
             setValues={setSelectedChipOptions2}
-            className="flex flex-1 flex-wrap gap-4 sm:gap-3"
+            className="flex gap-4 flex-wrap md:flex-nowrap sm:flex-nowrap justify-start"
           >
             {(option) => (
               <React.Fragment key={option.index}>
