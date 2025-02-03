@@ -40,24 +40,26 @@ export default function AboutSection() {
               </div>
             </motion.div>
             <motion.div
-              className="flex gap-[38px] md:flex-col"
+              className="flex sm:flex-col md:flex-row md:justify-between md:items-center gap-[38px] md:gap-[48px]"
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <div className="w-[28%] rounded-[12px] bg-gray-900_01 md:w-full">
+              {/* Profile Image */}
+              <div className="w-[28%] md:w-auto rounded-[12px] bg-gray-900_01">
                 <Img
                   src="img_image_16.png"
                   width={274}
                   height={304}
-                  alt="Imagesixteen"
+                  alt="Profile Image"
                   className="h-[304px] w-full rounded-[12px] object-cover md:h-auto"
                 />
               </div>
-              <div className="flex flex-1 flex-col items-center gap-7 md:self-stretch text-center">
+              {/* Text and Resume Button */}
+              <div className="flex flex-1 flex-col items-start gap-7 sm:text-center md:items-start">
                 <Heading
                   as="h5"
-                  className="w-full text-[20px] font-semibold leading-[140%]"
+                  className="text-[20px] font-semibold leading-[140%]"
                 >
                   I am a junior at Rice University pursuing two bachelor's
                   degrees, in computer science and statistics, with a minor
@@ -75,7 +77,7 @@ export default function AboutSection() {
                   size="xs"
                   variant="gradient"
                   shape="round"
-                  className="min-w-[150px] gap-3 rounded-[12px] px-5 font-bold mx-auto"
+                  className="min-w-[150px] gap-3 rounded-[12px] px-5 font-bold md:self-start sm:self-center"
                   style={{
                     background:
                       "linear-gradient(90deg, #62BDAE 0%, #45BBBD 30%, #3BA2C3 44%, #2B2B67 100%)",
