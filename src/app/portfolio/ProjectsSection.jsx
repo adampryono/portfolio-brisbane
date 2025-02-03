@@ -19,14 +19,14 @@ export default function ProjectsSection() {
             <Heading
               size="headings"
               as="h1"
-              className="text-[48px] font-bold md:text-[44px] sm:text-[38px] sm:text-center"
+              className="text-[48px] font-bold md:text-[44px] sm:text-[30px] sm:text-center"
             >
               Discover My
             </Heading>
             <Heading
               size="headings"
               as="h1"
-              className="bg-gradient bg-clip-text text-[48px] font-bold text-transparent md:text-[44px] sm:text-[38px] sm:text-center"
+              className="bg-gradient bg-clip-text text-[48px] font-bold text-transparent md:text-[44px] sm:text-[30px] sm:text-center"
             >
               Analytics
             </Heading>

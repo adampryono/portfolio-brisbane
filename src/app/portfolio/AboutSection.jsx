@@ -26,14 +26,14 @@ export default function AboutSection() {
                 <Heading
                   size="headinglg"
                   as="h6"
-                  className="text-[48px] font-bold md:text-[44px] sm:text-[38px]"
+                  className="text-[48px] font-bold md:text-[44px] sm:text-[23px]"
                 >
                   Know More About
                 </Heading>
                 <Heading
                   size="headinglg"
                   as="h1"
-                  className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[38px]"
+                  className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[23px]"
                 >
                   Arya
                 </Heading>
