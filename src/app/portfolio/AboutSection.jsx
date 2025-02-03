@@ -54,7 +54,7 @@ export default function AboutSection() {
                   className="h-[304px] w-full rounded-[12px] object-cover md:h-auto"
                 />
               </div>
-              <div className="flex flex-1 flex-col items-start gap-7 md:self-stretch">
+              <div className="flex flex-1 flex-col items-center gap-7 md:self-stretch text-center">
                 <Heading
                   as="h5"
                   className="w-full text-[20px] font-semibold leading-[140%]"
@@ -75,7 +75,7 @@ export default function AboutSection() {
                   size="xs"
                   variant="gradient"
                   shape="round"
-                  className="min-w-[150px] gap-3 rounded-[12px] px-5 font-bold"
+                  className="min-w-[150px] gap-3 rounded-[12px] px-5 font-bold mx-auto"
                   style={{
                     background:
                       "linear-gradient(90deg, #62BDAE 0%, #45BBBD 30%, #3BA2C3 44%, #2B2B67 100%)",
