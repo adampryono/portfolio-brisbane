@@ -15,7 +15,7 @@ export default function ProjectsSection() {
           >
             Projects
           </Heading>
-          <div className="flex flex-wrap justify-center gap-3 self-stretch">
+          <div className="flex flex-wrap justify-center gap-3 self-stretch sm:gap-2">
             <Heading
               size="headings"
               as="h1"

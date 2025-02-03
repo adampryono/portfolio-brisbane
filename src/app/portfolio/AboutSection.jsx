@@ -22,18 +22,18 @@ export default function AboutSection() {
               >
                 about
               </Heading>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap justify-center gap-3 self-stretch sm:gap-2">
                 <Heading
-                  size="headinglg"
-                  as="h6"
-                  className="text-[48px] font-bold md:text-[44px] sm:text-[23px]"
+                  size="headings"
+                  as="h1"
+                  className="text-[48px] font-bold md:text-[44px] sm:text-[28px]"
                 >
                   Know More About
                 </Heading>
                 <Heading
-                  size="headinglg"
+                  size="headings"
                   as="h1"
-                  className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[23px]"
+                  className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[28px]"
                 >
                   Arya
                 </Heading>

@@ -62,13 +62,13 @@ export default function EducationAndExperienceSection() {
                     </Heading>
                 </div>
                 <div className="flex flex-wrap justify-center gap-2 self-stretch mb-10"> {/* Tambahkan margin-bottom */}
-                    <Heading size="headinglg" as="h1" className="text-[48px] font-bold md:text-[44px] sm:text-[30px]">
+                    <Heading size="headings" as="h1" className="text-[48px] font-bold md:text-[44px] sm:text-[28px]">
                         Dive Into My
                     </Heading>
                     <Heading
-                        size="headinglg"
+                        size="headings"
                         as="h1"
-                        className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[30px]"
+                        className="bg-gradient bg-clip-text text-[48px] font-bold !text-transparent md:text-[44px] sm:text-[28px]"
                     >
                         Journey
                     </Heading>
